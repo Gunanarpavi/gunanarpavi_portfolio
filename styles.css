@@ -279,7 +279,7 @@ p {
   background: var(--card);
   backdrop-filter: blur(8px);
   box-shadow: var(--shadow);
-  transition: transform 240ms ease, border-color 240ms ease;
+  transition: transform 240ms ease, border-color 240ms ease, background 240ms ease;
 }
 
 .timeline-card::before {
@@ -292,11 +292,63 @@ p {
   border-radius: 50%;
   border: 2px solid var(--accent-2);
   background: #f4f2ef;
+  transition: background 240ms ease, box-shadow 240ms ease;
 }
 
 .timeline-card:hover {
   transform: translateX(6px);
   border-color: rgba(15, 90, 98, 0.36);
+}
+
+/* Education Card Variants */
+.timeline-card.education {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12) 0%, rgba(168, 85, 247, 0.1) 100%);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.timeline-card.education::before {
+  border-color: #6366f1;
+  background: #e0e7ff;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.4);
+}
+
+.timeline-card.education:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(168, 85, 247, 0.15) 100%);
+}
+
+/* Internship Card Variants */
+.timeline-card.internship {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.12) 0%, rgba(251, 146, 60, 0.1) 100%);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.timeline-card.internship::before {
+  border-color: #f97316;
+  background: #ffedd5;
+  box-shadow: 0 0 12px rgba(249, 115, 22, 0.4);
+}
+
+.timeline-card.internship:hover {
+  border-color: rgba(249, 115, 22, 0.5);
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.2) 0%, rgba(251, 146, 60, 0.15) 100%);
+}
+
+/* Workshop Card Variants */
+.timeline-card.workshop {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.12) 0%, rgba(34, 197, 94, 0.1) 100%);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+.timeline-card.workshop::before {
+  border-color: #22c55e;
+  background: #dcfce7;
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+}
+
+.timeline-card.workshop:hover {
+  border-color: rgba(34, 197, 94, 0.5);
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(34, 197, 94, 0.15) 100%);
 }
 
 .time {
