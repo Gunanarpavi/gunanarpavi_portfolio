@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap');
+
+:root {
+  --bg: #f4f1eb;
+  --text: #161f28;
+  --text-soft: #4e5a6a;
+  --line: rgba(17, 28, 35, 0.14);
+  --accent: #bf4e2d;
+  --accent-2: #066670;
+  --card: rgba(255, 255, 255, 0.72);
+  --shadow-soft: 0 14px 34px rgba(12, 27, 39, 0.12);
+
+  --font-body: 'Outfit', sans-serif;
+  --font-display: 'Sora', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 0%, rgba(191, 78, 45, 0.18), transparent 40%),
+    radial-gradient(circle at 90% 10%, rgba(6, 102, 112, 0.15), transparent 48%),
+    linear-gradient(130deg, #f7f4ee 0%, #f0ece5 100%);
+  line-height: 1.6;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.045) 0.7px, transparent 0.7px);
+  background-size: 3px 3px;
+  opacity: 0.25;
+  z-index: -1;
+}
+
+a {
+  color: inherit;
+}
